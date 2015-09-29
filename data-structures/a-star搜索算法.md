@@ -34,7 +34,7 @@ a-star算法的核心思想比较好理解。假设地图被分为大小均等�
 
 
 ###代码实现
-```
+```c++
 const int UNWALKABLE = 1;
 const int SOURCE = 2;
 const int DESTINATION = 3;
