@@ -39,7 +39,7 @@ randomized-partition算法随机地选取一个数作为主元，并在O(n)的�
 ###代码实现
 在借用了randomized-partition算法后，randomized-select算法可以如下实现：
 
-```
+```c++
 int randomized_select(vector<int>& v, int b, int e, int k)
 {
     if (b == e)
