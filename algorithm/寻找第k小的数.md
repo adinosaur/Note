@@ -53,7 +53,8 @@ int randomized_select(vector<int>& v, int b, int e, int k)
     else if (k < i)
         return randomized_select(v, b, q-1, k);
     else
-        return randomized_select(v, q+1, e, k-i);}
+        return randomized_select(v, q+1, e, k-i);
+}
 ```
 该算法期望时间是线性的，最坏时间是O(n^2)，当每次随机地选取主元都不幸地选到最小的或最大的是最坏情况。
 
@@ -80,14 +81,3 @@ select算法的描述如下：
 4. 用第3步得到的x值对输入数组执行partition操作。
 
 之后的便和randomized-select算法的处理一样了。
-
-
-
-
-
-
-
-
-
-
-
